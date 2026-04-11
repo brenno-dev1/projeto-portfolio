@@ -170,29 +170,36 @@ article#video-container h2 {
   gap: 30px;
 }
 
-#skill-container.info {
+#skill-container .info {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-#skill-container.none {
+#skill-container .nome {
   font-weight: bold;
   color: var(--texto);
 }
 
-#skill-container.barra  {
+#skill-container .porcent {
+  font-weight: bold;
+  height: 100%;
+  background-color: var(--destaque);
+  border-radius: 4px;
+
+}
+
+#skill-container .barra {
   width: 100%;
   height: 8px;
   background-color: var(--fundo-principal);
   border-radius: 4px;
 }
 
-#skill-container.progresso {
+#skill-container .progresso {
   height: 100%;
   background-color: var(--destaque-inverso);
   border-radius: 4px;
-
 }
 
 #formacao-container {
@@ -293,7 +300,7 @@ footer a {
   }
 
   #skill-container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr, 1fr;
   }
 
   #projeto-container .projeto {
